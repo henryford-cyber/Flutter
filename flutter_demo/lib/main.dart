@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/cupertino.dart';
 
+import 'Destination.dart';
+
 // void main() {
 //   runApp(MyApp());
 // }
 
 void main() {
-  runApp(gridview());
+  runApp(DestinationScr());
 }
 
 class gridview extends StatelessWidget {
