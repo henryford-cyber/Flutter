@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_demo/story_slider.dart';
+import 'package:flutter_demo/view/baitap2.dart';
 
 import 'Destination.dart';
 
-// void main() {
-//   runApp(MyApp());
-// }
-
 void main() {
-  runApp(DestinationScr());
+  runApp(StudentAttandee());
 }
 
 class gridview extends StatelessWidget {
