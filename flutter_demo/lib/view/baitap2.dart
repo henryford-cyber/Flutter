@@ -3,25 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../model/Student.dart';
+import '../model/movie.dart';
 
-class StudentAttandee extends StatefulWidget {
-  const StudentAttandee({Key? key}) : super(key: key);
+class MovieAttandee extends StatefulWidget {
+  const MovieAttandee({Key? key}) : super(key: key);
 
   @override
-  State<StudentAttandee> createState() => _StudentAttandeeState();
+  State<MovieAttandee> createState() => _MovieAttandeeState();
 }
 
-class _StudentAttandeeState extends State<StudentAttandee> {
-  List<Student> _list = Student.MackStudent();
+class _MovieAttandeeState extends State<MovieAttandee> {
+  List<Movie> listMovie = Movie.ListMovie();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back_ios),
-          title: Text("Điểm danh (Session 4)"),
-        ),
+            // leading: Icon(Icons.arrow_back_ios),
+            // title: Text("Điểm danh (Session 4)"),
+            ),
         body: slider(),
       ),
     );
@@ -30,11 +30,11 @@ class _StudentAttandeeState extends State<StudentAttandee> {
   slider() {
     return SingleChildScrollView(
         child: Column(children: [
-      ..._list.map((e) => sliderItem(e)),
+      ...listMovie.map((e) => sliderItem(e)),
     ]));
   }
 
-  sliderItem(Student student) {
+  sliderItem(Movie movie) {
     return Container(
       child: Column(
         children: [],
